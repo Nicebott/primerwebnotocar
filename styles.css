@@ -1,0 +1,219 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#search-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#search-form button {
+    padding: 6px 10px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #555;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 100px;
+}
+
+.game-title {
+    margin-bottom: 10px;
+}
+
+.download-button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .game {
+        width: calc(50% - 20px);
+    }
+
+    #search-input {
+        width: calc(100% - 100px);
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game {
+        width: 100%;
+    }
+
+    .download-button {
+        width: 100%;
+    }
+
+    #search-input {
+        width: calc(100% - 80px);
+    }
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Estilos para el botón flotante de Telegram */
+.telegram-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0088cc;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.telegram-btn img {
+    max-width: 50%; /* Reducir el tamaño del logotipo de Telegram */
+}
+
+.telegram-btn:hover {
+    background-color: #005580;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .telegram-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8em;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-contact,
+.footer-copyright {
+    margin-top: 10px;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
